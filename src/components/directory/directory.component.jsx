@@ -1,11 +1,11 @@
 import CategoryItem from '../category-item/category-item.component';
-
+import './categories.styles.scss';
 const Directory = ({ categories }) => {
 
     return (
         <div className="categories-container">
-            {categories.map((categ) => (
-                <CategoryItem key={categ.id} categoryWrapper={categ} />
+            {categories.map((category) => (
+                <CategoryItem key={category.id} category={category} />
             ))}
         </div>
     )
